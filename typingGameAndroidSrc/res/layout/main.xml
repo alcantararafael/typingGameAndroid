@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/LinearLayout01"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android">
+<ScrollView android:id="@+id/ScrollView01"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+	<LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:my="http://schemas.android.com/apk/res/com.ralcantara.android.test"
+	  android:orientation="vertical"
+	  android:layout_width="fill_parent"
+	  android:weightSum="1" android:layout_height="424dp"
+	  android:background="@color/BackgroundBlue"
+	  >
+	    <TextView android:layout_weight="0.24" android:id="@+id/textView1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Pressione Start para apresentar uma frase." android:layout_gravity="center"></TextView>
+	    <EditText android:enabled="false" android:editable="false" android:layout_height="wrap_content" android:id="@+id/editText1" android:layout_width="fill_parent" android:layout_weight="0.24" android:textSize="15px">
+	        <requestFocus></requestFocus>
+	    </EditText>
+
+
+	    <Button android:typeface="sans"			
+	    android:text="Start" android:id="@+id/button2" android:onClick="startStopGame" android:layout_width="fill_parent" android:layout_height="80px" android:textSize="20px">
+	    </Button>
+	    	
+	    <com.ralcantara.android.test.ChronometerCustom android:layout_weight="0.24" android:layout_height="wrap_content" android:text="Chronometer" android:layout_width="wrap_content" android:id="@+id/chronometer1" android:layout_gravity="center"></com.ralcantara.android.test.ChronometerCustom>
+	    	    
+	    <View android:layout_width="fill_parent" android:layout_height="15dip" android:background="@color/BackgroundBlue" />
+	    <View android:layout_width="fill_parent" android:layout_height="0.5px" android:background="#DDD" />
+	    <View android:layout_width="fill_parent" android:layout_height="15dip" android:background="@color/BackgroundBlue" />
+	    
+	    <!-- Social Network Buttons -->
+	    
+	    <View android:layout_width="fill_parent" android:layout_height="15dip" android:background="@color/BackgroundBlue" />
+	    
+	    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="0.24" android:text="Ranking" android:id="@+id/textView2" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_gravity="center" android:textStyle="bold" android:textSize="50px"></TextView>
+		<ListView android:id="@+id/listView1" android:layout_width="fill_parent" android:layout_height="327dp"></ListView>
+	</LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- attrs.xml will define custom attributes -->
+<resources>
+<declare-styleable name="ChronometerCustom">
+</declare-styleable>
+<color name="BackgroundBlue">#3B5998</color>
+<color name="ButtonWhite">#FFF</color>
+</resources>
